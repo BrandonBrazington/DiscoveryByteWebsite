@@ -41,3 +41,27 @@ figure {
   font-weight: 100;
   margin: 10px;
 }
+
+nav {
+  background-color: rgb(50, 100, 227);
+}
+
+nav > a {
+  padding: 10px;
+  font-size: 12px;
+  line-height: 35px;
+  background: linear-gradient(0deg, rgb(0, 255, 115), red);
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+nav > a:hover {
+  background: linear-gradient(0deg, red, black);
+  color: rgb(0, 255, 115);
+}
+
+nav > a.active {
+  background: linear-gradient(0deg, red, rgb(0, 255, 115));
+  color: black;
+}
