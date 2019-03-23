@@ -65,3 +65,15 @@ nav > a.active {
   background: linear-gradient(0deg, red, rgb(0, 255, 115));
   color: black;
 }
+
+footer {
+  text-align: center;
+}
+
+footer > span {
+  margin: 5px;
+}
+
+footer > a {
+  margin: 5px;
+}
