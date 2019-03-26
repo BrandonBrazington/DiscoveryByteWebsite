@@ -77,3 +77,11 @@ footer > span {
 footer > a {
   margin: 5px;
 }
+
+.red-text {
+  color: red;
+}
+
+.dark-red-text {
+  color: darkred;
+}
