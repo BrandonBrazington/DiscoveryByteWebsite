@@ -116,7 +116,6 @@
       </li>
     </ol>
 
-    <!--TODO: Add version history details for the rest of the versions-->
     <h2>Version History</h2>
     <ul>
       <li>
@@ -146,13 +145,197 @@
           </li>
         </ul>
       </li>
-      <li>Version 2.1.0.0 (2-16-11)</li>
-      <li>Version 2.0.0.0 (1-3-11)</li>
-      <li>Version 1.2.1.0 (11-5-09)</li>
-      <li>Version 1.2.0.0 (10-21-09)</li>
-      <li>Version 1.1.0.0 (10-6-09)</li>
-      <li>Version 1.0.2.0</li>
-      <li>Version 1.0.1.0</li>
+      <li>
+        Version 2.1.0.0 (2-16-11)
+        <ul>
+          <li>
+            Fixed: Printing an answer sheet that should span more than one page
+            would cause an infinite number of pages to print
+          </li>
+          <li>
+            Changed: Print document name (shown in the print queue and when
+            using some PDF printers) now includes the title from the print form
+          </li>
+          <li>
+            Fixed: Logging settings were not saved for all users, but were saved
+            as if they were user settings
+          </li>
+          <li>Added: Setting for users email address for logging errors</li>
+          <li>
+            Added: Ability for users to add more info and an email address when
+            an error occurs
+          </li>
+          <li>
+            Fixed: Create New Set Form was not getting file extension from the
+            file browser dialog
+          </li>
+          <li>
+            Fixed: Edit selected card wasn't loading # of answers for multiple
+            choice cards
+          </li>
+          <li>Added: Ability to change font for the main form</li>
+          <li>Changed: Font color on the label that shows the set path</li>
+          <li>Fixed: Portable mode wasn't starting</li>
+        </ul>
+      </li>
+      <li>
+        Version 2.0.0.0 (1-3-11)
+        <ul>
+          <li>
+            Changed the settings file to be in the application directory for non
+            portable installations
+          </li>
+          <li>
+            Removed the need for the advanced function library because it was
+            causing problems on Windows 7
+          </li>
+          <li>
+            Added ability to keep card scores and show those scores in a graph
+          </li>
+          <li>Changed message boxes to use VDialog</li>
+          <li>Added an insert bullet shortcut</li>
+          <li>Improved error handling/reporting</li>
+          <li>
+            Fixed: Label on the main form now updates to show the current sets
+            path
+          </li>
+          <li>Added a random number generator to cards (&rand#:Low:High;)</li>
+          <li>Improved check for updates</li>
+          <li>Added support for multiple choice answers</li>
+          <li>
+            Added ability to search/replace all for a phrase from main form
+          </li>
+          <li>
+            Removed the dual builds for portable, now it is stored in settings
+            file
+          </li>
+          <li>
+            Greatly improved printing, now it actually prints to paper instead
+            of to a text file for notepad to print
+          </li>
+          <li>Added keyboard shortcuts to test/study mode</li>
+          <li>Added options to test/study mode</li>
+          <li>
+            Tray icon is available without being in protable mode; Use settings
+            to control
+          </li>
+          <li>Switched to question/answer instead of front/back of card</li>
+          <li>
+            Now you can have multiple instances of the application running at
+            the same time
+          </li>
+          <li>
+            Changed website from discoverybyte.uuuq.com to discoverybyte.zxq.net
+            due to network problems
+          </li>
+        </ul>
+      </li>
+      <li>
+        Version 1.2.1.0 (11-5-09)
+        <ul>
+          <li>Changed the default sets path to My Documents</li>
+          <li>
+            Now if the folder doesn't exist when creating or modifying a set it
+            will be created
+          </li>
+          <li>
+            You can now change the path when creating/modifying a set; you no
+            longer have to use the browse dialog
+          </li>
+          <li>Fixed: Title on Load Set Dialog</li>
+          <li>Print range can now have spaces</li>
+          <li>
+            Changed 'Study FlashCard' to 'Discovery FlashCard' on all form
+            controls
+          </li>
+          <li>Fixed: Loadset Filter for INI Sets would show nothing</li>
+        </ul>
+      </li>
+      <li>
+        Version 1.2.0.0 (10-21-09)
+        <ul>
+          <li>
+            Updated the logo from 'Study FlashCards' to 'Discovery FlashCards'
+          </li>
+          <li>Improved unhandled exception handling (program errors)</li>
+          <ul>
+            <li>
+              You can choose whether to log errors, although it is recommended
+              to log errors
+            </li>
+            <li>You can choose where to save the error log file</li>
+            <li>
+              Added ability to open default web browser to upload error log file
+              form
+            </li>
+          </ul>
+          <li>All forms now display in the taskbar</li>
+          <li>
+            Improved the check for updates error handling, now it doesn't freeze
+            if advanced function library isn't installed
+          </li>
+          <li>
+            Added advanced function library installer, so it installs when the
+            program is installed
+          </li>
+        </ul>
+      </li>
+      <li>
+        Version 1.1.0.0 (10-6-09)
+        <ul>
+          <li>
+            Changed name from "Study FlashCards" to "Discovery FlashCards"
+          </li>
+          <li>Redefined when version numbers are changed</li>
+        </ul>
+      </li>
+      <li>
+        Version 1.0.2.0
+        <ul>
+          <li>Added the ability for it to check for updates</li>
+          <li>Added website and email link on about page</li>
+        </ul>
+      </li>
+      <li>
+        Version 1.0.1.0
+        <ul>
+          <li>Fixed: Modifying a set would destroy the set</li>
+          <li>Improved the way the file associations work</li>
+          <li>
+            Removed the character limit on the create/edit card form text boxes
+          </li>
+          <li>Added a cancel button to the create card form</li>
+          <li>
+            Enabled viewing multiline card data on the main form (Note: you
+            still cannot create a new line from the main form, you will need to
+            use the create card form to do that)
+          </li>
+          <li>
+            Disabled tab support, so that the tab key will move to the back of
+            card text box in create/edit card form
+          </li>
+          <li>
+            When the create/edit card form is loaded, it will now select the
+            entire contents of the front of the card
+          </li>
+          <li>
+            Left aligned the content of the text boxes on the test/study form,
+            now it matches the create/edit card form
+          </li>
+          <li>
+            Removed support for the retest function, it was not working properly
+            and needs lots of work to get it working
+          </li>
+          <li>
+            Improved the splashscreen, it now actually shows the logo as it is
+            supposed to
+          </li>
+          <li>
+            Added scroll bars to the create/edit form and test/study form text
+            boxes, before it you had to select text to make it scroll
+          </li>
+        </ul>
+      </li>
     </ul>
 
     <footer>
