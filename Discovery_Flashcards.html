@@ -4,9 +4,6 @@
     <meta charset="UTF-8" />
     <title>Discovery Byte Website: Discovery Flashcards</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
   </head>
 
   <body>
@@ -48,7 +45,79 @@
     </p>
 
     <h2>Screenshots</h2>
-    <!--TODO: Add screenshots here-->
+    <div id="screenshots-container">
+      <figure>
+        <a href="images/fullsize/Main_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/Main_Form.png"
+            alt="Thumbnail of the main form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Main Form</figcaption>
+      </figure>
+      <figure>
+        <a href="images/fullsize/Create_New_Set_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/Create_New_Set_Form.png"
+            alt="Thumbnail of the create new set form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Create New Set Form</figcaption>
+      </figure>
+      <figure>
+        <a
+          href="images/fullsize/CreateEdit_Card_MultiChoice_Form.png"
+          target="_blank"
+          ><img
+            src="images/thumbnails/CreateEdit_Card_MultiChoice_Form.png"
+            alt="Thumbnail of the create/edit card form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Create/Edit Card Form</figcaption>
+      </figure>
+      <figure>
+        <a href="images/fullsize/Check_Spelling_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/Check_Spelling_Form.png"
+            alt="Thumbnail of the check spelling form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Check Spelliing Form</figcaption>
+      </figure>
+
+      <figure>
+        <a href="images/fullsize/Print_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/Print_Form.png"
+            alt="Thumbnail of the print form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Print Form</figcaption>
+      </figure>
+      <figure>
+        <a href="images/fullsize/Settings_Form-Set.png" target="_blank"
+          ><img
+            src="images/thumbnails/Settings_Form-Set.png"
+            alt="Thumbnail of the settings form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Settings Form</figcaption>
+      </figure>
+      <figure>
+        <a href="images/fullsize/TestStudy_Normal_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/TestStudy_Normal_Form.png"
+            alt="Thumbnail of the test/study form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Test/Study Form</figcaption>
+      </figure>
+      <figure class="span-last-2-columns">
+        <a href="images/fullsize/Summary_Form.png" target="_blank"
+          ><img
+            src="images/thumbnails/Summary_Form.png"
+            alt="Thumbnail of the summary form of Discovery Flashcards"
+        /></a>
+        <figcaption>The Summary Form</figcaption>
+      </figure>
+    </div>
+    <p id="screenshots-larger-view-info">
+      Click on the thumnnails for a larger view (the images will open in a new
+      window)
+    </p>
 
     <h2>Features</h2>
     <ul>
@@ -95,8 +164,53 @@
 
     <h2>Download</h2>
     <p>Download the installer or the portable version.</p>
-    <!--TODO: Add table with download info and links, including showing previous versions when show previous versions button is pressed-->
-    <button>Show Previous Versions</button>
+    <table id="downloads-table">
+      <tr>
+        <th>Version</th>
+        <th>Release Date (MM/DD/YY)</th>
+        <th>Size</th>
+        <th>Download Type</th>
+        <th>Download Link</th>
+        <th>Hash Info</th>
+      </tr>
+      <tr>
+        <td>2.2.0.0</td>
+        <td>05/04/11</td>
+        <td>2.14 MB</td>
+        <td>Installer</td>
+        <td>
+          <a
+            class="download-btn"
+            href="downloads/Discovery_FlashCards_setup.exe"
+            >Download</a
+          >
+        </td>
+        <td>
+          MD5=579dad13cfa106f7fd15be83457bd256<br />
+          SHA1=1fa690fd57e5face310672df498e1ce7eb3a21a3
+        </td>
+      </tr>
+      <tr>
+        <td>2.2.0.0</td>
+        <td>05/04/11</td>
+        <td>1.78 MB</td>
+        <td>Portable Version (Zip file)</td>
+        <td>
+          <a
+            class="download-btn"
+            href="downloads/Discovery_FlashCards_Portable.zip"
+            >Download</a
+          >
+        </td>
+        <td>
+          MD5=34ce28d83f25b14b045c6e9cf6500a55<br />
+          SHA1=2eacd6524fbb3faa84c9207767aa95fa0090714c
+        </td>
+      </tr>
+    </table>
+
+    <!--TODO: Enable show previous versions button and show previous versions in the table when the button is pressed. Maybe make it a checkbox instead of a button-->
+    <button disabled="true">Show Previous Versions</button>
 
     <h2>Version Naming Convention:</h2>
     <p>The program version 1.2.3.4 is changed as follows:</p>

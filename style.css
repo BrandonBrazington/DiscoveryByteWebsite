@@ -1,15 +1,3 @@
-/* Define Define Semantic Elements as Block Elements for Older Browsers */
-header,
-section,
-footer,
-aside,
-nav,
-main,
-article,
-figure {
-  display: block;
-}
-
 #header-background-container {
   display: flex;
 }
@@ -88,4 +76,52 @@ footer > a {
 
 .green-text {
   color: green;
+}
+
+#screenshots-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.span-last-2-columns {
+  grid-column: 2/4;
+}
+
+figure,
+figcaption {
+  text-align: center;
+}
+
+#screenshots-larger-view-info {
+  text-align: center;
+  font-weight: bold;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td,
+th {
+  padding: 7px;
+}
+
+.download-btn {
+  padding: 7px 13px;
+  background-color: #b12121;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  border: 1px solid #b12121;
+  font-weight: bold;
+}
+
+.download-btn:hover {
+  background-color: rgb(0, 255, 115);
+  color: #b12121;
 }
