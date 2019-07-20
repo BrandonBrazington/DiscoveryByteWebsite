@@ -14,7 +14,7 @@ steps:
   inputs:
     SourceFolder: '$(build.sourcesDirectory)/source'
     Contents: '**\*'
-    TargetFolder: '$(BuildArtifactsStagingDirectory)/output'
+    TargetFolder: '$(Build.ArtifactsStagingDirectory)/output'
     
 - task: PublishBuildArtifacts@1
   inputs:
