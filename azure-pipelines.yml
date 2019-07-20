@@ -13,7 +13,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: '$(build.sourcesDirectory)/source'
-    TargetFolder: '$(Build.ArtifactsStagingDirectory)/output'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/output'
     
 - task: PublishBuildArtifacts@1
   inputs:
