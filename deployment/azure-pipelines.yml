@@ -11,13 +11,13 @@ pool:
 
 steps:
   - task: CopyFiles@2
-  displayName: 'Copy source files'
+    displayName: 'Copy source files'
     inputs:
       SourceFolder: "$(build.sourcesDirectory)/source"
       TargetFolder: "$(Build.ArtifactStagingDirectory)/output"
 
   - task: CopyFiles@2
-  displayName: 'Copy deployment files'
+    displayName: 'Copy deployment files'
     inputs:
       SourceFolder: "$(build.sourcesDirectory)/deployment"
       TargetFolder: "$(Build.ArtifactStagingDirectory)/deployment"
